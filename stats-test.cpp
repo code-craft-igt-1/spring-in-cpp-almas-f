@@ -18,4 +18,8 @@ TEST(Statistics, AverageNaNForEmpty) {
     
     //Design the gtest EXPECT statement here.
     //Use http://www.cplusplus.com/reference/cmath/isnan/
+
+    EXPECT_TRUE(std::isnan(computedStats.average));
+	EXPECT_TRUE(std::isnan(computedStats.max));
+	EXPECT_TRUE(std::isnan(computedStats.min));
 }
